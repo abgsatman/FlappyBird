@@ -1,0 +1,5 @@
+Flappy Bird Assets Source:
+https://www.spriters-resource.com/mobile/flappybird/sheet/59894/
+
+Flappy Bird Font Source:
+https://www.dafont.com/04b-19.font
