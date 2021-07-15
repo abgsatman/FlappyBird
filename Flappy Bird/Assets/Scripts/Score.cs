@@ -17,4 +17,14 @@ public class Score : MonoBehaviour
             scoreText.text = score.ToString();
         }
     }
+    
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+
+        if(coll.gameObject.tag == "pipe")
+        {
+            Debug.Log("game over!");
+            Time.timeScale = 0;
+        }
+    }
 }

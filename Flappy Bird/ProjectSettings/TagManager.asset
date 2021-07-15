@@ -6,6 +6,7 @@ TagManager:
   tags:
   - checkpoint
   - bird
+  - pipe
   layers:
   - Default
   - TransparentFX
