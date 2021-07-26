@@ -29,6 +29,9 @@ public class Score : MonoBehaviour
         {
             Debug.Log("game over!");
 
+            //when the game is over!
+            CheckHighScore();
+
             gameOver.SetActive(true);
             restart.SetActive(true);
 
@@ -41,5 +44,14 @@ public class Score : MonoBehaviour
         Time.timeScale = 1;
 
         SceneManager.LoadScene("SampleScene");
+    }
+
+    public void CheckHighScore()
+    {
+        if(PlayerPrefs.GetInt("highscore") < score)
+        {
+            //new high record!
+            PlayerPrefs.SetInt("highscore", score);
+        }
     }
 }
